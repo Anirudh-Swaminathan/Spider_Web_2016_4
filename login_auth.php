@@ -58,8 +58,8 @@ session_start();
 			while($sql->fetch()){
 				//do nothing
 			}
-			echo "Entered password is ".$user_pass;
-			echo "Password in DB is ".$passInTab;
+			//echo "Entered password is ".$user_pass;
+			//echo "Password in DB is ".$passInTab;
 			if(!strcmp($user_pass,$passInTab)){
 				echo "Logged in Successfully!!";
 				$_SESSION['login_status'] = true;

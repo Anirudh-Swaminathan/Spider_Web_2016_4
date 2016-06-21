@@ -6,7 +6,9 @@
    		
 		header('Location: '.$redirect_page);
    }
-
+   if(!isset($_SESSION['username'])){
+       redirect($redirect_page1);
+   }
    $user_name = $_SESSION['username'];
    $logged_in_status = $_SESSION['login_status'];
    if(!isset($_SESSION['login_status'])){
