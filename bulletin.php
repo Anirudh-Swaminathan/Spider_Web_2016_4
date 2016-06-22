@@ -60,7 +60,7 @@ else{
 	<!-- End of menu -->
 	<div id="posts">
 			<?php
-				$sql = $conn->prepare("SELECT Post_ID,Post,Username,Access,Time FROM t4_posts ORDER BY Time ASC");
+				$sql = $conn->prepare("SELECT Post_ID,Post,Username,Access,Time FROM t4_posts ORDER BY Time DESC");
 				$sql->execute();
 	
 				$sql->bind_result($post_id,$post,$user,$acce,$tim);
@@ -72,15 +72,21 @@ else{
 					$i = 0;
 					while($sql->fetch()){
 						$i++;
-						echo "<div id='post'.$post_id>";
-						echo "<h4>".$i.". ".$post."</h4>";
+						echo "<div id='post$post_id' class='post'>";
+						echo "<h4>".$i.". ".$post.". </h4>";
 						echo "<p> Posted By ".$user." [".$acce."] "."</p>";
-						echo "<p> At time ".$tim."</p></div>";
+						echo "<p> At time ".$tim."</p>";
+						if(!strcmp($access,"Admin")){
+							echo "<button id = $post_id onclick = 'delPost(this)'>Delete Post</button></div>";
+						}
+						else echo "</div>";
 					}
 				}
 				$sql->close();
 				$conn->close();
 			?>
 	</div>
+	<script src = "bulletin.js" type = 'text/javascript'>
+	</script>
 </body>
 </html>

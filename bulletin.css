@@ -45,3 +45,35 @@ li:hover li a:hover {
 body{
     background-color: #7df0c6;
 }
+#posts{
+    width: 1000px;
+    position: relative;
+    left:1%;
+    top:10%;
+}
+.post{
+    width: 1000px;
+    display: block;
+    background-color: #4e60b6;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top-color: chartreuse;
+}
+.post h4{
+    display: block;
+    margin: 4px;
+    padding: 4px;
+}
+.post p{
+    display: inline-block;
+    margin:4px;
+    padding: 4px;
+    position: relative;
+    left: 50%;
+}
+.post button{
+    float: right;
+    margin: 4px;
+}

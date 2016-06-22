@@ -22,8 +22,16 @@ ob_start();
 			$message = 'Username must not be empty';
 			return false;
 		}
+		if(strlen(trim($n)) == 0){
+			$message = 'Username must contain atleast 1 non-whitespace character';
+			return false;
+		}
 		if(!strcmp($p,'')){
 			$message = 'Password must not be empty';
+			return false;
+		}
+		if(strlen(trim($p)) == 0){
+			$message = 'Password must contain atleast 1 non-whitespace character';
 			return false;
 		}
 		if(!strcmp($c,'')){

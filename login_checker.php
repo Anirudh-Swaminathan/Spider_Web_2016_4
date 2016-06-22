@@ -18,7 +18,7 @@
    else{
 	   session_unset();
 	   session_destroy();
-		redirect($redirect_page1);
+	   redirect($redirect_page1);
    }
 
 ?>
