@@ -73,7 +73,7 @@ else{
 					while($sql->fetch()){
 						$i++;
 						echo "<div id='post$post_id' class='post'>";
-						echo "<h4>".$i.". ".$post.". </h4>";
+						echo "<h4>".$i.". ".$post."</h4>";
 						echo "<p> Posted By ".$user." [".$acce."] "."</p>";
 						echo "<p> At time ".$tim."</p>";
 						if(!strcmp($access,"Admin")){

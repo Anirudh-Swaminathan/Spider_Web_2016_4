@@ -16,7 +16,12 @@ function delPost(button) {
                     di.parentNode.removeChild(di);
                 }
                 else{
-                    alert(xhttp.responseText);
+                    //
+                    var re = new RegExp("<title>[\n\r\s]*(.*)[\n\r\s]*</title>", "gmi");
+                    var title = re.exec(xhttp.responseText);
+                    //alert(title+";");
+                    if(title!=="") location.reload();
+                    else alert(xhttp.responseText);
                 }
             }
         };
