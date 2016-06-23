@@ -17,6 +17,12 @@ session_start();
 
 	$message = "Hello";
 
+	if(isset($_SESSION['login_status']) && $_SESSION['login_status'] == true){
+		echo "You have already logged in another tab";
+		header("Location: /Spider_2016_4/bulletin.php");
+		die("Already logged in ");
+	}
+
 	function validateInp($n,$p){
 		global $message;
 		if(!strcmp($n,'')){
