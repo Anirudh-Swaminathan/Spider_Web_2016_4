@@ -1,6 +1,12 @@
 <?php
 require "login_checker.php";
 require_once "connect.php";
+if(!isset($_SESSION['access_level'])){
+    redirect('/Spider_2016_4');
+}
+if(!strcmp($_SESSION['access_level'],"Viewer")){
+    redirect('/Spider_2016_4/bulletin.php');
+}
 ?>
 <!DOCTYPE html>
 <html>

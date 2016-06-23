@@ -77,3 +77,7 @@ body{
     float: right;
     margin: 4px;
 }
+.post select{
+    position: relative;
+    left: 65%;
+}
