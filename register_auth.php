@@ -1,5 +1,6 @@
 <?php
 ob_start();
+session_start();
 ?>
 <!DOCTYPE html>
 <html>
@@ -15,6 +16,12 @@ ob_start();
 	header("Pragma: no-cache");
 
 	$message = "Hello";
+	
+	if(isset($_SESSION['login_status']) && $_SESSION['login_status'] == true){
+		echo "Please logout before registering another account";
+		header("Location: /Spider_2016_4/bulletin.php");
+		die("Already logged in ");
+	}
 
 	function validateInp($n,$p,$c){
 		global $message;
@@ -40,6 +47,12 @@ ob_start();
 		}
 		if(strcmp($p,$c)){
 			$message = 'Confirm Password must be the same as that of the Password';
+			return false;
+		}
+		
+		if($_POST['captcha_code'] != $_SESSION['digit']){
+			$message = "Sorry, the CAPTCHA code entered was incorrect!";
+			session_destroy();
 			return false;
 		}
 		return true;
