@@ -1,0 +1,7 @@
+ RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^http://localhost/Spider_2016_4/register.php$
+RewriteRule captcha.php - [F,NC]
+RewriteCond %{SCRIPT_FILENAME} -d [OR]
+RewriteCond %{SCRIPT_FILENAME} -f
+RewriteRule "(^|/)\." - [F]
+RedirectMatch 404 /\..*$
