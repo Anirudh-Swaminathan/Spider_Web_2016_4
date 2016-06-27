@@ -25,6 +25,8 @@ session_start();
 
 	function validateInp($n,$p,$c){
 		global $message;
+
+		//Check name
 		if(!strcmp($n,'')){
 			$message = 'Username must not be empty';
 			return false;
@@ -33,6 +35,7 @@ session_start();
 			$message = 'Username must contain atleast 1 non-whitespace character';
 			return false;
 		}
+		//Check password
 		if(!strcmp($p,'')){
 			$message = 'Password must not be empty';
 			return false;
@@ -50,6 +53,7 @@ session_start();
 			return false;
 		}
 		
+		//Check captcha
 		if($_POST['captcha_code'] != $_SESSION['digit']){
 			$message = "Sorry, the CAPTCHA code entered was incorrect!";
 			session_destroy();
@@ -63,7 +67,7 @@ session_start();
 		echo "<script type='text/javascript'>alert('$message');window.location.href='/Spider_2016_4/register.php';</script>";
 	}
 	
-	$user_name = $_POST["user_name"];//"aaa";
+	$user_name = $_POST["user_name"];
 	$user_pass = $_POST["password"];
 	$conf_pass = $_POST["confirm"];
 	$access = "Viewer";

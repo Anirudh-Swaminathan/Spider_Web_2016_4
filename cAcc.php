@@ -11,8 +11,6 @@ else{
     else{
         $user = $_POST["user"];
         $accN = $_POST["accNew"];
-        //echo "The post ID is $id";
-        //UPDATE `spider_2016_4` SET `Access` = 'Editor' WHERE `spider_2016_4`.`Username` = 'SQL Injector'
         $sql = $conn->prepare("UPDATE `spider_2016_4` SET `Access` = ? WHERE `spider_2016_4`.`Username` = ?");
         $sql->bind_param("ss",$accN,$user);
         $bo = $sql->execute();

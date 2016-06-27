@@ -25,10 +25,13 @@ session_start();
 
 	function validateInp($n,$p){
 		global $message;
+
+		//Check name
 		if(!strcmp($n,'')){
 			$message = 'Username must not be empty';
 			return false;
 		}
+		//Check password
 		if(!strcmp($p,'')){
 			$message = 'Password must not be empty';
 			return false;

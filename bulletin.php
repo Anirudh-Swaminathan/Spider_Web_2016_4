@@ -32,30 +32,6 @@ else{
 		?>
 
   		<li><a href="logout.php">Logout</a></li>
-		
-		<!--
-  		<li><a href="#">Web Design</a>
-    		<ul>
-    			<li><a href="#">HTML</a></li>
-    			<li><a href="#">CSS</a></li>
-      			<li><a href="#">JavaScript</a></li>
-    		</ul>
-  		</li>
-  		<li><a href="#">Content Management</a>
-    		<ul>
-      			<li><a href="#">Joomla</a></li>
-      			<li><a href="#">Drupal</a></li>
-      			<li><a href="#">WordPress</a></li>
-      			<li><a href="#">Concrete 5</a></li>
-    		</ul>
-  		</li>
-  		<li><a href="#">Contact</a>
-    		<ul>
-     		 	<li><a href="#">General Inquiries</a></li>
-      			<li><a href="#">Ask me a Question</a></li>
-    		</ul>
-  		</li>
-		  -->
 	</ul>
 	<!-- End of menu -->
 	<div id="posts">

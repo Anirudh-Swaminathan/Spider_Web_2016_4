@@ -4,7 +4,7 @@ $redirect_page = '/../Spider_2016_4/bulletin.php';
 if(isset($_SESSION['login_status']) && $_SESSION['login_status']){
 	header('Location: '.$redirect_page);
 }
-//echo "".$_SESSION['digit'];
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -22,12 +22,6 @@ if(isset($_SESSION['login_status']) && $_SESSION['login_status']){
 		<input type="password" required name = "password" id="password"/>
 		<label>Confirm Password</label>
 		<input type="password" required name = "confirm" id="confirm"/>
-		
-		<!--
-		<p><img src="/../Spider_2016_4/captcha.php" width="120" height="30" border="1" alt="CAPTCHA"></p>
-		<p><input type="text" size="6" maxlength="5" name="captcha" value=""><br>
-		<small>copy the digits from the image into this box</small></p>
-		-->
 		
 		<center><p><img id="captcha" src="/../Spider_2016_4/captcha.php" width="160" height="45" border="1" alt="CAPTCHA"></center>
 		<center><small><a href="#" onclick="

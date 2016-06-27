@@ -1,7 +1,7 @@
-//alert('Hi');
 function btnClick() {
     return validate();
 }
+//Validate user input
 function validate() {
     var t = document.getElementByid("posts").value;
     if(t === ''){

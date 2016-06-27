@@ -17,22 +17,18 @@ ob_start();
 
 	$message = "Hello";
 
+	//Validate input
 	function validateInp($ti){
 		global $message;
-        //echo "(validateInp)The post given is $ti <br/>";
-        //$pq = strlen($ti);
-        //echo "(validateInp)The length of the post is $pq<br/>";
-        //echo "(validateInp)The value of strcmp is ".strcmp($ti,"")."<br/>";
+		//Check post
 		if(empty($ti)){
 			$message = 'Post must not be empty';
-            //echo "(validateInp)The text is empty<br/>";
 			return false;
 		}
         if(strlen(trim($ti)) == 0){
             $message = 'Post must contain atleast 1 non-whitespace character';
             return false;
         }
-        //echo "(validateInp)The text is not empty<br/>";
 		return true;
 	}
 
@@ -43,18 +39,15 @@ ob_start();
 
     $postHere = $_POST["posts"];
     
-    //echo "The post was $postHere";
-    //$pqr = strlen($postHere);
-    //echo "The length of the post is $pqr <br/>";
     $user = $_SESSION["username"];
     $acces = $_SESSION["access_level"];
 
 	if(validateInp($postHere)){
-        //echo "It was a valid post<br/>";
 		$sql = $conn->prepare("INSERT INTO t4_posts(Post,Username,Access) VALUES(?,?,?) ");
 		$sql->bind_param("sss",$postHere,$user,$acces);
 		$bo = $sql->execute();
 		if($bo){
+			//Successfully posted
             echo "The Post was successful<br/>";
             header("Location: /../Spider_2016_4/bulletin.php");
             ob_end_clean();
