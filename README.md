@@ -28,6 +28,8 @@
 - Viewers only view posts. Editors can add post. Admin has access to admin panel to delete posts, and change access level of other users.
 - Used AJAX for deleting posts, and changing access level of users.
 - Implemented Client side, as well as server side validation for all forms.
+- A post is made when the access level of any user changes.
+- The posts are ordered from latest to oldest.
 
 ### List of Server Routes
     The list of server routes is as follows:-
