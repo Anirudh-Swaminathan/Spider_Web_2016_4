@@ -7,7 +7,7 @@
 - A login page to authenticate registered users.
 - A bulletin page for showing posts on that page.
 
-    Users will have different authorization levels, namely
+    Users will have different authorization levels, namely:-
 
 * Viewer- Can view posts when logged in.
 * Editor- Can add a post to the bulletin board
@@ -15,7 +15,7 @@
     The advanced mode included the following:-
 
 * [X] Use captcha in registration page.
-* [] Post moderation system.
+* [ ] Post moderation system.
 
     The language used was PHP. NO Frameworks or modules were used.
     The Database used was a MySQL Database.
@@ -42,13 +42,15 @@ The database used was a MySQL database. The database name here was **spider_2016
 <br/>
 <br/>
 Two tables were used. One for users, and the other for posts.
+<br/>
+<br/>
 1. **spider_2016_4**
 <br/>
 <br/>
 <table>
 <tr>
 <td>Row Name</td>
-<td>username</td>
+<td>Username</td>
 <td>Password</td>
 <td>Access</td>
 </tr>
@@ -112,12 +114,12 @@ Two tables were used. One for users, and the other for posts.
 > code written by me.
 <br/>
 <br/>
-> Download all the files and save them in a folder name *Spider_2016_2*.
+> Download all the files and save them in a folder name *Spider_2016_4*.
 > Save that folder in the **www** folder created during installation. By default, it is in C:/wamp64/www/
 <br/>
 <br/>
 > Start your favourite browser.
-> Type in *http://localhost/Spider_2016_2/* in the box provided.
+> Type in *http://localhost/Spider_2016_4/* in the box provided.
 <br/>
 <br/>
 > Enjoy using my website. :smiley:
