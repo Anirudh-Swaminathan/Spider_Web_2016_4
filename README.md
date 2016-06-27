@@ -130,27 +130,31 @@ Two tables were used. One for users, and the other for posts.
 <br/>
 ![Index page Screenshot](/../screenshots/Screenshots/index_page.png?raw=true "Index Page")
 <br/>
-2. Index Page(Login Page)
+2. Register Page
 <br/>
-![Index page Screenshot](/../screenshots/Screenshots/index_page.png?raw=true "Index Page")
+![Register page Screenshot](/../screenshots/Screenshots/register.png?raw=true "Register Page")
 <br/>
-3. Index Page(Login Page)
+3. Admin Bulletin Page
 <br/>
-![Index page Screenshot](/../screenshots/Screenshots/index_page.png?raw=true "Index Page")
+![Admin Bulletin page Screenshot](/../screenshots/Screenshots/bulletin_ad.png?raw=true "Bulletin page for Admin")
 <br/>
-4. Index Page(Login Page)
+4. Editor Bulletin Page
 <br/>
-![Index page Screenshot](/../screenshots/Screenshots/index_page.png?raw=true "Index Page")
+![Editor Bulletin page Screenshot](/../screenshots/Screenshots/bulletin_ed.png?raw=true "Editor Bulletin Page")
 <br/>
-5. Index Page(Login Page)
+5. Viewer Bulletin Page
 <br/>
-![Index page Screenshot](/../screenshots/Screenshots/index_page.png?raw=true "Index Page")
+![Viewer Bulletin page Screenshot](/../screenshots/Screenshots/bulletin_vi.png?raw=true "Viewer Bulletin Page")
 <br/>
-6. Index Page(Login Page)
+6. Add Post Page
 <br/>
-![Index page Screenshot](/../screenshots/Screenshots/index_page.png?raw=true "Index Page")
+![Add Post page Screenshot](/../screenshots/Screenshots/add_post.png?raw=true "Add Post Page")
 <br/>
-7. Index Page(Login Page)
+7. Bulletin page after adding post
 <br/>
-![Index page Screenshot](/../screenshots/Screenshots/index_page.png?raw=true "Index Page")
+![Post Added page Screenshot](/../screenshots/Screenshots/postadded.png?raw=true "PostAdded")
+<br/>
+8. Admin Panel
+<br/>
+![Admin Panel Screenshot](/../screenshots/Screenshots/admin_panel.png?raw=true "Admin Panel")
 <br/>
