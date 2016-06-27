@@ -28,6 +28,8 @@
 - Viewers only view posts. Editors can add post. Admin has access to admin panel to delete posts, and change access level of other users.
 - Used AJAX for deleting posts, and changing access level of users.
 - Implemented Client side, as well as server side validation for all forms.
+- A post is made when the access level of any user changes.
+- The posts are ordered from latest to oldest.
 
 ### List of Server Routes
     The list of server routes is as follows:-
@@ -124,4 +126,31 @@ Two tables were used. One for users, and the other for posts.
 <br/>
 > Enjoy using my website. :smiley:
 ### Screenshots
-    Coming Soon!!
+1. Index Page(Login Page)
+<br/>
+![Index page Screenshot](/../screenshots/Screenshots/index_page.png?raw=true "Index Page")
+<br/>
+2. Index Page(Login Page)
+<br/>
+![Index page Screenshot](/../screenshots/Screenshots/index_page.png?raw=true "Index Page")
+<br/>
+3. Index Page(Login Page)
+<br/>
+![Index page Screenshot](/../screenshots/Screenshots/index_page.png?raw=true "Index Page")
+<br/>
+4. Index Page(Login Page)
+<br/>
+![Index page Screenshot](/../screenshots/Screenshots/index_page.png?raw=true "Index Page")
+<br/>
+5. Index Page(Login Page)
+<br/>
+![Index page Screenshot](/../screenshots/Screenshots/index_page.png?raw=true "Index Page")
+<br/>
+6. Index Page(Login Page)
+<br/>
+![Index page Screenshot](/../screenshots/Screenshots/index_page.png?raw=true "Index Page")
+<br/>
+7. Index Page(Login Page)
+<br/>
+![Index page Screenshot](/../screenshots/Screenshots/index_page.png?raw=true "Index Page")
+<br/>
